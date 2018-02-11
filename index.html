@@ -24,15 +24,16 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- SweetAlert CSS  -->
     <link type="text/css" rel="stylesheet" href="css/sweetalert.css">
-    <!-- Custom styles for this Portfolio -->
+    <!-- Custom styles for this Portfolio | minified for fast loading-->
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
-    <!-- Tab Icon-->
+    <!-- Tab Icon | used cloudinary for storing image-->
     <link rel="shortcut icon" href="https://res.cloudinary.com/gscode/image/upload/v1517817319/g-128.png">
     <!-- Tab Title -->
     <title>Ganesh</title>
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar-fixed">
         <a class="navbar-brand" href="index.html">GaneshSundaram</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -52,6 +53,10 @@
             </ul>
         </div>
     </nav>
+    <!--End of navbar-->
+    <!-- intro section which shows my picture, small intro, social media links and scroll down button with pulse animation -->
+    <!-- used animate.js for effects on text while loading -->
+    <!-- used cloudinary as cdn for storing images-->
     <header class="intro">
         <div class="intro-body">
             <div class="container">
@@ -71,6 +76,10 @@
             </div>
         </div>
     </header>
+    <!--End of intro section-->
+    <!-- About section contains my picture,information such as education, current status, experience -->
+    <!-- used aos library for scroll animation for text-->
+    <!-- used cloudinary as cdn for storing images-->
     <div class="container-fluid" id="about">
         <section>
             <div class="container-fluid">
@@ -92,6 +101,12 @@
             </div>
         </section>
     </div>
+    <!--End of about section-->
+    <!-- Work section contains owl-carousel which shows images of my projects -->
+    <!--Owl carousel is dragable and responsive-->
+    <!--When you click on one of the images a bootstrap modal will open that will contain a link to source code and website-->
+    <!-- used aos library for scroll animation for owl-carousel -->
+    <!-- used cloudinary as cdn for storing images-->
     <div class="container-fluid" id="work">
         <section>
             <div class="container-fluid">
@@ -111,6 +126,7 @@
             </div>
         </section>
     </div>
+    <!-- Modals starts from here-->
     <!-- Modal 1 -->
     <div class="modal fade" id="pig-game" tabindex="-1" role="dialog" aria-labelledby="piggamelabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -175,6 +191,9 @@
             </div>
         </div>
     </div>
+    <!--End of work section-->
+    <!--Contact section contains boostraps cards with my contact information and contact me using mail-->
+    <!--used emailjs(Send email from Javascript - no server code required) -->
     <div class="container-fluid" id="contact">
         <section>
             <div class="container-fluid">
@@ -225,6 +244,9 @@
             </div>
         </section>
     </div>
+    <!--End of contact sention-->
+    <!--inspiration quotes from designers-->
+    <!--used slick.js as crousel for quotes-->
     <div class="container-fluid" id="quote">
         <section>
             <div class="container">
@@ -262,6 +284,8 @@
             </div>
         </section>
     </div>
+    <!--End of quotes section-->
+    <!--Footer section-->
     <footer id="main-footer" class="py-5 bg-info text-white">
         <div class="container">
             <div class="row text-center">
@@ -293,9 +317,9 @@
         emailjs.init("user_3NB50omIWwpQToXY0ergt");
     })();
     </script>
-    <!-- SweetAlert JS -->
+    <!-- SweetAlert JS for contact form -->
     <script src="js/sweetalert.min.js"></script>
-    <!-- Custom JS File-->
+    <!-- Custom JS File | minified for fast loading-->
     <script src="js/script.min.js " type="text/javascript "></script>
 </body>
 
